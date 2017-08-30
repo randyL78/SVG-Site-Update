@@ -5,7 +5,8 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+/*	 ========== changed background.png to background.svg ========== */
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -50,6 +51,21 @@ header {
     line-height: 1em;
   }
 
+/* ============== Logo Styling ====================*/
+
+.svg-logo {
+	width: 140px;
+	height: 120px;
+}
+.logo-text {
+	color: #EAAA7F;
+}
+/* Hide svg text at smaller screen widths */
+.svg-logo__text {
+	opacity: 0;
+	fill:#EAAA7F;
+}
+
 main {
   padding-top: 50px;
 }
@@ -80,3 +96,17 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+@media (min-width: 425px) {
+	/*  Display svg text */
+	.svg-logo__text {
+		opacity: 1;
+	}	
+	/* Hide H1 Text */
+	.logo-text {
+		display: none;
+	}
+}
+
+
+
