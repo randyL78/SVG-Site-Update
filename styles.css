@@ -66,6 +66,22 @@ header {
 	fill:#EAAA7F;
 }
 
+.svg-logo__circle{
+	fill:#BA8058;
+}
+			
+.svg-logo__pads {
+	fill:#F4C6A6;
+}
+
+/* ============== Dog Images ====================*/
+
+
+/* ============== Nav Images ====================*/
+.svg-social {
+	fill:#39ADD1;
+}
+
 main {
   padding-top: 50px;
 }
