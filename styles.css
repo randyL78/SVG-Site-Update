@@ -6,13 +6,14 @@ body {
   font-weight: 300;
   color: #111;
 /*	 ========== changed background.png to background.svg ========== */
-  background: url('svgs/background.svg') #edeff0;
+  background: url('svgs/background.svg') #cdefd0;
 }
 
 #container {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
+  box-shadow: 0 0 15px 8px #984;
 }
 
 p {
@@ -49,6 +50,19 @@ header {
   header h1 {
     line-height: 1em;
   }
+
+/* ============== Nav Images ====================*/
+.svg-social {
+	height: 21px;
+	fill:#39ADD1;
+	transform-origin: center;
+	transform: translateY(5px);
+	transition: fill .8s, transform .4s;
+}
+a:hover .svg-social {
+	fill:#195B6F;
+	transform: translateY(5px) rotate(-30deg) scale(1.2);
+}
 
 /* ============== Logo Styling ====================*/
 
@@ -132,17 +146,7 @@ header {
 	transform: scale(1.4);
 	fill : #333;
 }
-/* ============== Nav Images ====================*/
-.svg-social {
-	height: 13px;
-	fill:#39ADD1;
-	transform-origin: center;
-	transition: fill .8s, rotate .4s;
-}
-a:hover .svg-social {
-	fill:#195B6F;
-	transform: rotate(-20deg);
-}
+
 
 
 main {
