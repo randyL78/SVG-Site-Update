@@ -115,9 +115,13 @@ a:hover .svg-social {
 	fill:#EAAA7F;
 }
 
-.brow--left,
+.brow--left {
+	transform-origin: 45px 70px;
+	transition: transform .7s;
+}
+
 .brow--right {
-	transform-origin: center;
+	transform-origin: 102px 84px;
 	transition: transform .7s;
 }
 
@@ -127,26 +131,36 @@ a:hover .svg-social {
 
 /*  Make eyebrows rotate in opposite directions on hover*/
 .dog:hover .brow--left {
-	transform-origin: center;
+	transform-origin:  45px 70px;
 	transform: rotate(-25deg);
 }
 
 .dog:hover .brow--right {
-	transform-origin: center;
+	transform-origin:  102px 84px;
 	transform: rotate(25deg);
 }
 
-.dog--eyes {
-	transform-origin: center;
+.dog--eyes-left {
+	transform-origin:  35px 80px;
 	transition: transform .7s, fill .7s;
 }
 
-.dog:hover .dog--eyes {
-	transform-origin: center;
+.dog:hover .dog--eyes-left {
+	transform-origin:  35px 80px;
 	transform: scale(1.4);
 	fill : #333;
 }
 
+.dog--eyes-right {
+	transform-origin:  102px 92px;
+	transition: transform .7s, fill .7s;
+}
+
+.dog:hover .dog--eyes-right {
+	transform-origin:  102px 92px;
+	transform: scale(1.4);
+	fill : #333;
+}
 
 
 main {
